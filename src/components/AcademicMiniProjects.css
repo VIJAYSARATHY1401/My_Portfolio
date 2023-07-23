@@ -1,0 +1,123 @@
+/* Academic Mini Projects Section */
+.academic-mini-projects {
+  margin-top: 20px;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.project-button {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.project-button:hover {
+  background-color: #ddd;
+}
+
+.project-button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 4px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.project-card.active-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+.view-more-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Roboto", sans-serif;
+}
+
+.view-more-button:hover {
+  background-color: #0056b3;
+}
+
+/* Card Animation */
+@keyframes cardAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to each project card */
+.project-card:nth-child(1) {
+  animation: cardAnimation 0.5s ease-out 0.1s forwards;
+}
+
+.project-card:nth-child(2) {
+  animation: cardAnimation 0.5s ease-out 0.2s forwards;
+}
+
+/* Add more animations for other project cards as needed */
+
+/* Styling for the icon */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.logo-icon {
+  font-size: 48px;
+  color: #007bff;
+  transition: transform 0.3s;
+}
+
+.logo-icon:hover {
+  transform: scale(1.2); /* Add a cool scaling effect on hover */
+}

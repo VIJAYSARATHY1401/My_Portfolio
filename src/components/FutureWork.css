@@ -1,0 +1,52 @@
+/* Future Work and Learnings Section */
+.future-work-section {
+  margin-top: 30px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.future-work-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #007bff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.future-work-content {
+  font-size: 16px;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+.future-work-content p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.future-work-content .icon {
+  margin-right: 10px;
+  color: #28a745; /* Green color for the checkmark icon */
+}
+
+/* Add a dashed border to separate paragraphs */
+.future-work-content p:not(:last-child) {
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10px;
+}
+
+/* Add a subtle animation on hover */
+.future-work-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 576px) {
+  .fut {
+    display: none;
+  }
+}
