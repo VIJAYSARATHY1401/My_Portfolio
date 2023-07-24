@@ -2,11 +2,11 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <section className="bg-hero pt-5 text-white">
-      <div className="container">
+    <section className="bg-hero text-white">
+      <div className="container p-5">
         <div className="row">
           <div className="col-sm-4">
-            <div className="mt-5">
+            <div className="">
               <img
                 src="https://icons-for-free.com/iconfiles/png/512/message+one+comment+one+message+request+icon-1320184041562889001.png"
                 width="240"

@@ -8,8 +8,8 @@ const TopContainer = () => {
     "https://drive.google.com/file/d/1FKWg-wQXhxsaWCaKGMW3qU-cCvdZiYxw/view?usp=drive_link";
 
   return (
-    <Element name="about" className="bg-img">
-      <div className="imgg-container">
+    <Element name="Home">
+      <div className="imgg-container ">
         <img src={image} alt="Description of the image" className="top-image" />
         <div className="desktop-only">
           <div className="wrap-container">

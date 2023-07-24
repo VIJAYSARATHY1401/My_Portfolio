@@ -41,8 +41,17 @@
 }
 
 .navbar-nav > li {
-  margin-left: 20px;
-  padding: 0px 5px;
+  margin-left: 3px;
+  padding: 0px 8px;
+  /* margin-top: 10px; */
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 .navbar-nav a:hover span {
   color: black;
@@ -64,11 +73,13 @@
 }
 /* TopContainer.css */
 /* TopContainer.css */
-.bg-img {
-  background: url("/src/components/bridge_golden_gate_5639x3561.jpg");
+.imgg-container {
+  background: url("../src/components/bridge_golden_gate_5639x3561.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 89vh;
+  /* padding: 20px; */
 }
 
 /* TopContainer.css */
@@ -76,25 +87,23 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: sticky;
-  top: 0;
-  padding: 10px;
-  height: 92vh;
-  background: linear-gradient(to bottom right, #583737, #000000);
+  position: relative;
+  /* background: linear-gradient(to bottom right, #583737, #000000); */
 }
 
-.bg-img:before {
+.imgg-container:before {
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: linear-gradient(to bottom right, #583737, #000000);
+  background-image: linear-gradient(#583737, #000000);
   opacity: 0.5;
 }
 
 .top-image {
+  margin-top: 20px;
   height: 500px;
   margin-left: 20px;
   /* margin-top: 50px; */
@@ -198,7 +207,7 @@ h4 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .lGroup {
-  height: 120vh;
+  height: auto;
 }
 .lGroup .row {
   margin-top: 30px;
@@ -209,12 +218,13 @@ h4 {
   }
 }
 .skill-main {
-  width: 100%;
+  margin-bottom: 65px;
+  /* width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 30px;
   grid-column-gap: 50px;
-  margin-left: 40px;
+  margin-left: 40px; */
 }
 .skill-bar {
   margin-bottom: 1rem;
@@ -290,9 +300,23 @@ h4 {
   left: 0;
   width: 100%;
   height: 100%;
+
   border-radius: 50%;
   background-color: #4caf50;
+  transform: translate(-50%, -50%);
   clip: rect(0, 100px, 100px, 0); /* Adjust the clip property */
+  .loader {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+
+    clip: rect(
+      0,
+      10px,
+      10px,
+      0
+    ); /* Adjust clip for proper height-width ratio */
+  }
 }
 
 .percentage-label {
@@ -340,11 +364,55 @@ h4 {
 .container {
   width: 100% !important;
 }
-@media (max-width: 767.98px) {
-  .desktop-view {
-    display: none;
+/* Styles for desktop */
+.desktop-view {
+  display: block; /* Hide the desktop view on mobile devices */
+}
+
+.skill-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.skill-left,
+.skill-right {
+  width: calc(50% - 20px); /* Adjust the width to fit two columns on desktop */
+}
+
+/* Styles for mobile */
+@media screen and (max-width: 768px) {
+  /* .bg-img {
+    height: 91vh;
+  } */
+  .skill-main {
+    display: block; /* Stack the elements in a single column on mobile */
+  }
+
+  .skill-left {
+    width: 100%;
+    margin: 0;
+  }
+  .skill-right {
+    width: 90%; /* Take up full width on mobile */
+    margin: 0;
+  }
+
+  .loader-wrapper {
+    flex: 0 0 100%; /* Take up full width on mobile */
+  }
+
+  .loader {
+    clip: rect(
+      0,
+      10px,
+      10px,
+      0
+    ); /* Adjust clip for proper height-width ratio */
   }
 }
+
 /* Courses.css */
 /* Custom styling for courses section */
 
@@ -438,7 +506,7 @@ h4 {
 .bg-hero {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: auto;
   background: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80")
     center center no-repeat;
   background-size: cover;
@@ -460,14 +528,14 @@ h4 {
   z-index: 1;
 }
 .fut {
-  height: 80vh;
+  height: auto;
   margin: 20px;
   padding: 10px;
 }
 .awa {
   padding: 10px;
   margin: 20px;
-  height: 60vh;
+  height: auto;
 }
 /* from courses */
 .abtn {
@@ -493,5 +561,10 @@ h4 {
     height: auto;
     /* border: 2px solid red; */
     overflow: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hide-mobile {
+    display: none;
   }
 }

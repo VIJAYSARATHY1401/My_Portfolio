@@ -138,8 +138,19 @@ footer .idiv .fa-instagram {
 .custom-content button:hover {
   background-color: #0056b3;
 }
+
 @media (max-width: 767px) {
   footer {
-    display: none; /* Hide the footer for mobile devices */
+    flex-direction: column; /* Display content in a column layout on smaller screens */
+    align-items: center; /* Center align items horizontally on smaller screens */
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .footer-left {
+    margin-top: 20px; /* Add margin between the image and the footer-left content */
+  }
+
+  .img-div {
+    margin-bottom: 20px; /* Add margin at the bottom of the image */
   }
 }

@@ -72,3 +72,30 @@
   animation: slideIn 0.5s ease-out;
   animation-delay: calc(0.2s * var(--index));
 }
+@media screen and (max-width: 768px) {
+  .award-cards {
+    flex-direction: column; /* Display the cards in a column layout on mobile */
+  }
+
+  .award-card {
+    margin: 10px auto; /* Center the cards horizontally */
+    max-width: 90%; /* Reduce the maximum width to fit the smaller screen */
+  }
+
+  /* The hover animation and slide-in animation might be less suitable for mobile,
+     so we will disable them on smaller screens */
+  .award-card:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+  }
+
+  .award-card {
+    animation: none; /* Remove the slide-in animation on mobile */
+  }
+
+  /* Center the text within the award card on mobile */
+  .award-card h3,
+  .award-card p {
+    text-align: center;
+  }
+}

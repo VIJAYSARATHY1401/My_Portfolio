@@ -110,11 +110,13 @@
 @media (max-width: 767.98px) {
   .int {
     width: 100%; /* Adjust the width to fit the mobile screen */
-    margin: 0; /* Remove the margin for better alignment on mobile */
+    margin: 0;
+    margin-top: 20px; /* Remove the margin for better alignment on mobile */
   }
 
   .experience-title {
-    font-size: 24px; /* Reduce the font size for mobile */
+    font-size: 24px;
+    margin-bottom: 12px; /* Reduce the font size for mobile */
   }
 
   /* Update other styles as needed for a better mobile experience */

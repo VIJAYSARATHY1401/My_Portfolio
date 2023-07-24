@@ -2,7 +2,9 @@
 import React, { useState } from "react";
 // Make sure to create this CSS file
 import "./Overview.css";
+import { Element } from "react-scroll";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+
 const OverviewSection = () => {
   const [selectedItem, setSelectedItem] = useState(0);
 
@@ -39,73 +41,75 @@ const OverviewSection = () => {
   };
 
   return (
-    <div className="container">
-      <div className="wrap-side mt-4">
-        <div className="wrap-about">
-          <h2>Want to know about me?</h2>
-          <span className="text-muted">Have a short glimpse!</span>
+    <Element name="About">
+      <div className="container">
+        <div className="wrap-side mt-4">
+          <div className="wrap-about">
+            <h2>Want to know about me?</h2>
+            <span className="text-muted">Have a short glimpse!</span>
+          </div>
+          <div className="round-image">
+            <img
+              src="https://t4.ftcdn.net/jpg/01/35/92/85/360_F_135928597_xU5EzKq6vpOeXPX5vsbI48zfVVkSRlrF.jpg"
+              alt="Round Image"
+            />
+          </div>
         </div>
-        <div className="round-image">
-          <img
-            src="https://t4.ftcdn.net/jpg/01/35/92/85/360_F_135928597_xU5EzKq6vpOeXPX5vsbI48zfVVkSRlrF.jpg"
-            alt="Round Image"
-          />
-        </div>
-      </div>
 
-      <div className="card overview-card">
-        <div className="card-body">
-          <div className="overview-section p-4 rounded">
-            <div className="left-grid ">
-              <div className="overview-buttons">
-                <h3 className="btn btn-primary">
-                  Overview <i className="badge bg-success rounded-pill">3</i>
-                </h3>
-                <ul className="overview-list">
-                  {overviewData.map((item, index) => (
-                    <li
-                      key={index}
-                      className={
-                        index === selectedItem
-                          ? "active bg-primary text-white"
-                          : ""
-                      }
-                      onClick={() => handleItemClick(index)}
-                    >
-                      {item.title}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="right-grid">
-              <h3 className="btn btn-primary desc1 ">
-                Description <i className="fa fa-address-book"></i>
-              </h3>
-              <div className="overview-description p-4 rounded">
-                {selectedItem !== null && (
-                  <ul>
-                    {Array.isArray(overviewData[selectedItem].description) ? (
-                      overviewData[selectedItem].description.map(
-                        (point, index) => (
-                          <li key={index} style={{ fontFamily: "cursive" }}>
-                            {point}
-                          </li>
-                        )
-                      )
-                    ) : (
-                      <li style={{ fontFamily: "cursive" }}>
-                        {overviewData[selectedItem].description}
+        <div className="card overview-card">
+          <div className="card-body">
+            <div className="overview-section p-4 rounded">
+              <div className="left-grid ">
+                <div className="overview-buttons">
+                  <h3 className="btn btn-primary">
+                    Overview <i className="badge bg-success rounded-pill">3</i>
+                  </h3>
+                  <ul className="overview-list">
+                    {overviewData.map((item, index) => (
+                      <li
+                        key={index}
+                        className={
+                          index === selectedItem
+                            ? "active bg-primary text-white"
+                            : ""
+                        }
+                        onClick={() => handleItemClick(index)}
+                      >
+                        {item.title}
                       </li>
-                    )}
+                    ))}
                   </ul>
-                )}
+                </div>
+              </div>
+              <div className="right-grid">
+                <h3 className="btn btn-primary desc1 ">
+                  Description <i className="fa fa-address-book"></i>
+                </h3>
+                <div className="overview-description p-4 rounded">
+                  {selectedItem !== null && (
+                    <ul>
+                      {Array.isArray(overviewData[selectedItem].description) ? (
+                        overviewData[selectedItem].description.map(
+                          (point, index) => (
+                            <li key={index} style={{ fontFamily: "cursive" }}>
+                              {point}
+                            </li>
+                          )
+                        )
+                      ) : (
+                        <li style={{ fontFamily: "cursive" }}>
+                          {overviewData[selectedItem].description}
+                        </li>
+                      )}
+                    </ul>
+                  )}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 
