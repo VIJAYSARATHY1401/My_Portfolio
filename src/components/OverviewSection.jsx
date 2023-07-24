@@ -42,7 +42,7 @@ const OverviewSection = () => {
 
   return (
     <Element name="About">
-      <div className="container">
+      <div className="container mb-5">
         <div className="wrap-side mt-4">
           <div className="wrap-about">
             <h2>Want to know about me?</h2>
@@ -58,7 +58,7 @@ const OverviewSection = () => {
 
         <div className="card overview-card">
           <div className="card-body">
-            <div className="overview-section p-4 rounded">
+            <div className="overview-section p-2 rounded">
               <div className="left-grid ">
                 <div className="overview-buttons">
                   <h3 className="btn btn-primary">
@@ -70,7 +70,7 @@ const OverviewSection = () => {
                         key={index}
                         className={
                           index === selectedItem
-                            ? "active bg-primary text-white"
+                            ? "active bg-info text-white"
                             : ""
                         }
                         onClick={() => handleItemClick(index)}
@@ -91,13 +91,27 @@ const OverviewSection = () => {
                       {Array.isArray(overviewData[selectedItem].description) ? (
                         overviewData[selectedItem].description.map(
                           (point, index) => (
-                            <li key={index} style={{ fontFamily: "cursive" }}>
+                            <li
+                              key={index}
+                              style={{
+                                fontFamily: "cursive",
+                                backgroundColor: "whitesmoke",
+                                padding: "10px",
+                                borderRadius: "8px",
+                              }}
+                            >
+                              <i
+                                className={`mx-1 fas ${overviewData[selectedItem].icon}`}
+                              ></i>
                               {point}
                             </li>
                           )
                         )
                       ) : (
-                        <li style={{ fontFamily: "cursive" }}>
+                        <li style={{ fontFamily: "monospace" }}>
+                          <i
+                            className={`mx-1 fas ${overviewData[selectedItem].icon}`}
+                          ></i>
                           {overviewData[selectedItem].description}
                         </li>
                       )}

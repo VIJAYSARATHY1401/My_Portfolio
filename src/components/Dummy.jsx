@@ -6,16 +6,16 @@ const Dummy = () => {
   return (
     <Element name="Projects">
       <div className="Dummy bg-dark conatiner ">
-        <h2 className=" p-4 text-light text-center">
+        <h2 className=" p-3 text-light text-center">
           My Personal Projects and Hands-on Experience
         </h2>
-        <h4 className="  lead  text-light">
+        <h4 className=" p-2 lead  text-light">
           Each project is a unique piece of Development{" "}
           <i className="fa fa-pencil text-primary"></i>
         </h4>
 
         <div className="">
-          <div className="container mb-5 my-5">
+          <div className="container mb-5 ">
             <div className="row">
               <div className="col-md-4">
                 <div className="card">

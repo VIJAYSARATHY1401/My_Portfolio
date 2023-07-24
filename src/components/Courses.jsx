@@ -53,7 +53,7 @@ const Courses = () => {
     <Element name="Courses">
       <div className="container">
         <div className="courses-section mt-4">
-          <h2>Courses & Certificates</h2>
+          <h2 className="text-center mb-4">Courses & Certificates</h2>
           <div className="row">
             {/* First Row */}
             {courses.slice(0, 3).map((course, index) => (

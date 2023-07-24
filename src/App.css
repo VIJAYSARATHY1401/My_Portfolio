@@ -213,12 +213,12 @@ h4 {
   margin-top: 30px;
 }
 @media (max-width: 767px) {
-  .col-md-4 {
-    margin-bottom: 20px;
+  .Dummy .col-md-4 {
+    margin-top: 20px;
   }
 }
 .skill-main {
-  margin-bottom: 65px;
+  margin-bottom: 90px;
   /* width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -226,12 +226,19 @@ h4 {
   grid-column-gap: 50px;
   margin-left: 40px; */
 }
+@media (max-width: 767px) {
+  .skill-main {
+    margin-bottom: 20px;
+  }
+}
 .skill-bar {
   margin-bottom: 1rem;
 }
+
 .skill-main h3 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
+  margin-left: 60px !important;
 }
 .skill-left .skill-bar .info {
   display: flex;
@@ -567,4 +574,28 @@ h4 {
   .hide-mobile {
     display: none;
   }
+}
+@media screen and (max-width: 767px) {
+  /* Target devices with a maximum screen width of 767px (typical mobile devices) */
+  .bg-hero {
+    height: auto; /* You can adjust this height to your preference */
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 2s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.wrap-container h1.text-light {
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 4px 4px 4px blue;
 }

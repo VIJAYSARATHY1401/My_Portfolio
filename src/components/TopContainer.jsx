@@ -1,5 +1,4 @@
-// TopContainer.js
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Element } from "react-scroll";
 import image from "./Screenshot_20221221-134901_WhatsApp[540].jpg";
 
@@ -9,11 +8,11 @@ const TopContainer = () => {
 
   return (
     <Element name="Home">
-      <div className="imgg-container ">
+      <div className="imgg-container">
         <img src={image} alt="Description of the image" className="top-image" />
         <div className="desktop-only">
           <div className="wrap-container">
-            <h1 className="text-light">Mr.VIJAYSARATHY M</h1>
+            <h1 className={`text-light`}>Mr.VIJAYSARATHY M</h1>
             <h3 className="text-light">
               <span className="badge bg-success">
                 <i className="fa fa-user"></i> {"  "}Upcoming

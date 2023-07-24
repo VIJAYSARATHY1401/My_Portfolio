@@ -94,3 +94,29 @@
 .wrap-about {
   text-align: center;
 }
+/* Overview.css */
+
+/* Add responsive styles for the image container */
+.wrap-side {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.round-image {
+  flex: 0 0 200px;
+  max-width: 100%;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .wrap-side {
+    flex-direction: column;
+  }
+
+  .round-image {
+    margin-bottom: 1rem;
+  }
+}

@@ -76,8 +76,13 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item last">
-                <Link to="Conatct" className="nav-link active" duration={500}>
-                  <span className="btn btn-success">Conatact</span>
+                <Link
+                  to="Contact"
+                  className="nav-link active"
+                  offset={-60}
+                  duration={500}
+                >
+                  <span className="btn btn-success">Contact</span>
                 </Link>
               </li>
             </ul>

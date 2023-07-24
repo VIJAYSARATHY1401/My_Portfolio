@@ -5,7 +5,7 @@ const Listgroup = () => {
   return (
     <Element name="Skills">
       <div className="container lGroup">
-        <h2 className="mt-3">Core Technical Skills</h2>
+        <h2 className="mt-3 text-center">Core Technical Skills</h2>
         <div className="row text-center ">
           <div className="col-4 ">
             <div>
@@ -146,7 +146,7 @@ const Listgroup = () => {
               </div>
             </div>
             <div className="skill-right">
-              <h3>Professional Skills</h3>
+              <h3 className="">Professional Skills</h3>
               <div className="grid-container ">
                 <div className="loader-wrapper">
                   <p>Team work</p>
@@ -162,7 +162,7 @@ const Listgroup = () => {
                   </div>
                 </div>
                 <div className="loader-wrapper">
-                  <p>Managment</p>
+                  <p>Management</p>
                   <div className="loader-container">
                     <div
                       className="loader"
