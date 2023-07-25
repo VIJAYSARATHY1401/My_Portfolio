@@ -23,7 +23,7 @@ const Awards = () => {
     {
       title: "Simple Webpage design",
       description:
-        "Have Done a simple static SPA webpage for my college portfolio during my 1st year. Appreciated by the management team and encouraged me to work more on the project",
+        "Have Done a simple static SPA webpage for my college portfolio during my 1st year. Appreciated by the management team and encouraged me to work more on the project.",
       icon: "fa-trophy",
       Certificate: "https://vijaysarathy1401.github.io/UIRMD/",
     },

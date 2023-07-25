@@ -15,8 +15,8 @@ const InternshipExperience = () => {
         <ul className="experience-highlights">
           <li>
             <i className="fas fa-check-circle"></i> Working on the training
-            tasks on real-wrold practical projects under the guidance of
-            experienced developers.
+            tasks on practical projects under the guidance of experienced
+            developers.
           </li>
           <li>
             <i className="fas fa-check-circle"></i> Collaborated with the team
