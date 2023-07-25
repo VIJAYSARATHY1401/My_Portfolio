@@ -73,8 +73,15 @@ const ContactForm = () => {
                   alt=""
                 />
 
-                <h1 className="">Want to Contact Me?</h1>
-                <p className="leading">Send me a message</p>
+                <h1
+                  className=""
+                  style={{ fontSize: "32px", letterSpacing: "1px" }}
+                >
+                  Want to Contact Me?
+                </h1>
+                <p className="lead">
+                  Send me a message.. I will reach you soon
+                </p>
               </div>
             </div>
             <div className="col-sm-8 text-dark">
@@ -136,7 +143,7 @@ const ContactForm = () => {
                         value={msg}
                         onChange={(e) => setMsg(e.target.value)}
                         required
-                        placeholder="Share your message with us"
+                        placeholder="Share your message"
                       ></textarea>
                     </div>
                     <div className="d-grid">

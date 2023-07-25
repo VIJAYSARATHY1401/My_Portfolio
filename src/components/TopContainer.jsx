@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Element } from "react-scroll";
 import image from "./Screenshot_20221221-134901_WhatsApp[540].jpg";
-
+import { Link } from "react-scroll";
 const TopContainer = () => {
   const resumeFileUrl =
     "https://drive.google.com/file/d/1FKWg-wQXhxsaWCaKGMW3qU-cCvdZiYxw/view?usp=drive_link";
@@ -12,7 +12,9 @@ const TopContainer = () => {
         <img src={image} alt="Description of the image" className="top-image" />
         <div className="desktop-only">
           <div className="wrap-container">
-            <h1 className={`text-light`}>Mr.VIJAYSARATHY M</h1>
+            <h1 className={`text-light`} style={{ fontFamily: "Lugrasimo" }}>
+              Mr.VIJAYSARATHY M
+            </h1>
             <h3 className="text-light">
               <span className="badge bg-success">
                 <i className="fa fa-user"></i> {"  "}Upcoming
@@ -31,11 +33,16 @@ const TopContainer = () => {
                   Resume
                 </button>
               </a>
-              <button className="btn btn-outline-info">
+              <Link
+                to="Contact"
+                className="btn btn-outline-info"
+                offset={-60}
+                duration={500}
+              >
                 {" "}
                 <i className="fa fa-laptop"></i>
-                {"     "}My Work
-              </button>
+                {"     "}Hire Me
+              </Link>
             </div>
           </div>
         </div>

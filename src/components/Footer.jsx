@@ -9,24 +9,54 @@ const Footer = () => {
       <footer>
         <div className="footer-left">
           <h1>
-            Front-end Development{" "}
+            Full Stack Development{" "}
             <i className="fa fa-laptop" style={{ fontSize: "30px" }}></i>
           </h1>
           <blockquote>
             Learn free Gain more! <span style={{ color: "red" }}>❤</span>
           </blockquote>
           <div>
-            <h3 style={{ marginTop: "8px", textDecoration: "underline" }}>
+            <h3
+              style={{
+                marginTop: "8px",
+                marginRight: "8px",
+                textDecoration: "underline",
+              }}
+            >
               Follow me on
             </h3>
             <div className="idiv" style={{ marginBottom: "20px" }}>
-              <i className="fab fa-facebook"></i>
-              <i className="fab fa-linkedin"></i>
-              <i className="fab fa-instagram"></i>
-              <i className="fab fa-github"></i>
+              <a
+                href="https://www.facebook.com/david.vijay.5817"
+                target="_blank"
+                style={{ color: "blue" }}
+              >
+                <i className="fab fa-facebook"></i>
+              </a>
+              <a
+                href="   https://www.linkedin.com/in/vijaysarathy-m-52a37b244/"
+                style={{ color: "rgb(24, 121, 248)" }}
+                target="_blank"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/committed_to_my_personality/?igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                style={{ color: "red" }}
+                target="_blank"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://github.com/VIJAYSARATHY1401"
+                target="_blank"
+                style={{ color: "black" }}
+              >
+                <i className="fab fa-github" style={{ cursor: "pointer" }}></i>
+              </a>
             </div>
             <span style={{ color: "gray", marginLeft: "-10px" }}>
-              &copy; All rights reserved{" "}
+              &copy; All rights reserved 2023{" "}
             </span>
             <div className="mt-2">
               <span style={{ color: "gray" }}>
@@ -36,13 +66,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="custom-content">
-          {/* Add your cool content or design elements here */}
-          <h3>Contact Info</h3>
-          <p>Email: vijayinnovation14@gmail.com</p>
-          <p>Phone: 6380760038</p>
-          <p>City: Chennai TamilNadu</p>
-        </div>
 
         <div className="img-div">
           <div className="img-card">
@@ -50,7 +73,7 @@ const Footer = () => {
             <div className="overlay">
               <div className="overlay-content">
                 <h3>VIJAYSARATHY M</h3>
-                <p>Front-end Developer</p>
+                <p>Developer</p>
               </div>
             </div>
           </div>

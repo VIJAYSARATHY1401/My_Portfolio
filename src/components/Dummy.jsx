@@ -36,10 +36,19 @@ const Dummy = () => {
                       A portale and stylish Tic-Tac-Toe Game Built using React
                       JS
                     </p>
-                    <span className="btn btn-info b">
-                      View GithHub code <i className="fab fa-github"></i>
-                    </span>
-                    <a href="#" className="btn btn-primary d-block site2 abtn">
+                    <a
+                      href="https://github.com/VIJAYSARATHY1401/Tic-Tac-Toe_Game/"
+                      target="_blank"
+                    >
+                      <span className="btn btn-info b">
+                        View GithHub code <i className="fab fa-github"></i>
+                      </span>
+                    </a>
+                    <a
+                      href="https://vijaysarathy1401.github.io/Tic-Tac-Toe_Game/"
+                      target="_blank"
+                      className="btn btn-primary d-block site2 abtn"
+                    >
                       <i className="fa fa-external-link"></i> View site
                     </a>
                   </div>
@@ -62,12 +71,21 @@ const Dummy = () => {
                       list
                     </p>
                     <div className="github-btn-container">
-                      <span className="btn btn-info b grpGithub">
-                        View GitHub code <i className="fab fa-github"></i>
-                      </span>
+                      <a
+                        href="https://github.com/VIJAYSARATHY1401/Implementing-Music_player-using-Linked_List"
+                        target="_blank"
+                      >
+                        <span className="btn btn-info b grpGithub">
+                          View GitHub code <i className="fab fa-github"></i>
+                        </span>
+                      </a>
                       <div className="clear-fix"></div>
                     </div>
-                    <a href="#" className="btn btn-primary d-block site abtn">
+                    <a
+                      href="https://vijaysarathy1401.github.io/Implementing-Music_player-using-Linked_List/"
+                      target="_blank"
+                      className="btn btn-primary d-block site abtn"
+                    >
                       <i className="fa fa-external-link"></i> View Site
                     </a>
                   </div>
@@ -92,8 +110,12 @@ const Dummy = () => {
                       managing in Mysql server
                     </p>
 
-                    <a href="#" className="btn btn-primary  d-block mt">
-                      <i className="fa fa-external-link"></i> ENROLL NOW
+                    <a
+                      href="https://github.com/VIJAYSARATHY1401/Spring_boot"
+                      target="_blank"
+                      className="btn btn-primary  d-block mt"
+                    >
+                      View GitHub code <i className="fab fa-github"></i>
                     </a>
                   </div>
                 </div>
@@ -135,13 +157,15 @@ const Dummy = () => {
                       user API and make it managable by means of CRUD operations
                       and access through the Mysql server.
                     </p>
-                    <p className="card-text float-end">
-                      <small className="text-muted ">Last updated on Jan</small>
-                    </p>
+
                     <div className="clearfix"></div>
                   </div>
-                  <a href="#" className="btn btn-primary text-center ">
-                    <i className="fa fa-newspaper-o "></i> Read more
+                  <a
+                    href="https://github.com/VIJAYSARATHY1401/iamneo__project"
+                    target="_blank"
+                    className="btn btn-primary text-center mx-3 "
+                  >
+                    View GitHub code <i className="fab fa-github"></i>
                   </a>
                 </div>
               </div>

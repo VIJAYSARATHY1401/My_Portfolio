@@ -19,17 +19,17 @@ const OverviewSection = () => {
     {
       title: "Technical Learning Career",
       description:
-        "I am a Full Stack Developer with a passion for creating dynamic and user-friendly web applications. My journey in the world of web development began with a focus on Front-end development. As I honed my skills, I started working on various Static Single Page Applications, mastering the art of crafting engaging and responsive user interfaces.Driven by the desire to build complete and robust applications, I expanded my knowledge to include Back-end development. I successfully implemented server connectivity, enabling seamless communication between the client and the server. Additionally, I gained expertise in setting up database storage systems to manage and store application data efficiently.",
+        "I am an upcoming Full Stack Developer with a passion for creating dynamic and user-friendly web applications. My journey in the world of web development began with a focus on Front-end development. As I honed my skills, I started working on various Static Single Page Applications, mastering the art of crafting engaging and responsive user interfaces.Driven by the desire to build complete and robust applications, I expanded my knowledge to include Back-end development. I successfully implemented server connectivity, enabling seamless communication between the client and the server. Additionally, I gained expertise in setting up database storage systems to manage and store application data efficiently.",
       icon: "fa-book",
     },
     {
       title: "Qualities and performance",
       description: [
-        "1.Creativity: ability to think outside the box and come up with innovative solutions",
-        "2.Attention to Detail: Every project in my portfolio reflects my meticulous approach to design and development, ensuring a polished and professional outcome,",
-        "3.Adaptability: My portfolio features diverse projects, highlighting my ability to adapt and excel in various industries and design styles",
-        "4.Problem-Solving Skills: Through my portfolio, you'll see how I tackle challenges head-on, finding effective solutions to complex design and development problems.",
-        "5.Collaboration: Many projects in my portfolio were completed in collaboration with teams, showcasing my strong teamwork and communication skills.",
+        "1.Creativity",
+        "2.Attention to Detail",
+        "3.Adaptability",
+        "4.Problem-Solving Skills",
+        "5.Collaboration",
       ],
       icon: "fa-pencil",
     },
@@ -94,7 +94,6 @@ const OverviewSection = () => {
                             <li
                               key={index}
                               style={{
-                                fontFamily: "cursive",
                                 backgroundColor: "whitesmoke",
                                 padding: "10px",
                                 borderRadius: "8px",
@@ -108,7 +107,7 @@ const OverviewSection = () => {
                           )
                         )
                       ) : (
-                        <li style={{ fontFamily: "monospace" }}>
+                        <li style={{ fontFamily: "Roboto Condensed" }}>
                           <i
                             className={`mx-1 fas ${overviewData[selectedItem].icon}`}
                           ></i>

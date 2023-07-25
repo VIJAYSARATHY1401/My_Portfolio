@@ -5,7 +5,7 @@ const Listgroup = () => {
   return (
     <Element name="Skills">
       <div className="container lGroup">
-        <h2 className="mt-3 text-center">Core Technical Skills</h2>
+        <h2 className="mt-3 text-center ct">Core Technical Skills</h2>
         <div className="row text-center ">
           <div className="col-4 ">
             <div>
@@ -155,14 +155,14 @@ const Listgroup = () => {
                       className="loader"
                       style={{
                         transform: "rotate(50deg)",
-                        clip: "rect(0, 45px, 100px, 0)",
+                        clip: "rect(0, 75px, 100px, 0)",
                       }}
                     ></div>
-                    <div className="percentage-label">45%</div>
+                    <div className="percentage-label">70%</div>
                   </div>
                 </div>
                 <div className="loader-wrapper">
-                  <p>Management</p>
+                  <p>Leadership</p>
                   <div className="loader-container">
                     <div
                       className="loader"

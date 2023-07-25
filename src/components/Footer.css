@@ -5,7 +5,7 @@ footer {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-around;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -153,5 +153,8 @@ footer .idiv .fa-instagram {
 
   .img-div {
     margin-bottom: 20px; /* Add margin at the bottom of the image */
+  }
+  .img-card {
+    margin-top: 20px;
   }
 }
