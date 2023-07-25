@@ -26,12 +26,12 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="mynav">
             <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
+              <li className="nav-item" style={{ cursor: "pointer" }}>
                 <Link to="Home" className="nav-link active" duration={500}>
                   <span>Home</span>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item" style={{ cursor: "pointer" }}>
                 <Link
                   to="About"
                   spy={true}

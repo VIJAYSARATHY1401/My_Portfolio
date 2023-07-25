@@ -10,10 +10,7 @@ const Listgroup = () => {
           <div className="col-4 ">
             <div>
               <div className="list-group ">
-                <a
-                  href="#"
-                  className="list-group-item list-group-item-action active"
-                >
+                <a className="list-group-item list-group-item-action active">
                   Front End <i className="fab fa-html5 " aria-hidden="true"></i>
                 </a>
                 <div className="list-group-item list-group-item-action">
@@ -39,10 +36,7 @@ const Listgroup = () => {
           </div>
           <div className="col-4">
             <div className="list-group">
-              <a
-                href="#"
-                className="list-group-item list-group-item-action active"
-              >
+              <a className="list-group-item list-group-item-action active">
                 Back End <i className="fa fa-code" aria-hidden="true"></i>
               </a>
               <div className="list-group-item list-group-item-action">
@@ -67,10 +61,7 @@ const Listgroup = () => {
           </div>
           <div className="col-4">
             <div className="list-group">
-              <a
-                href="#"
-                className="list-group-item list-group-item-action active"
-              >
+              <a className="list-group-item list-group-item-action active">
                 Others <i className="fa fa-wrench" aria-hidden="true"></i>
               </a>
               <div className="list-group-item list-group-item-action">
