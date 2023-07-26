@@ -17,10 +17,10 @@ const Listgroup = () => {
                   HTML5/CSS3
                 </div>
                 <div className="list-group-item list-group-item-action">
-                  Boostrap
+                  Bootstrap
                 </div>
                 <div className="list-group-item list-group-item-action">
-                  SASS-CSS preprosser
+                  SASS-CSS preprocessor
                 </div>
                 <div className="list-group-item list-group-item-action">
                   Javascript for web

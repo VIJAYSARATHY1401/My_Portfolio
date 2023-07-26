@@ -19,7 +19,7 @@ const TopContainer = () => {
               <span className="badge bg-success">
                 <i className="fa fa-user"></i> {"  "}Upcoming
               </span>{" "}
-              full Stack developer
+              Full Stack Developer
             </h3>
             <div className="wrap-btn">
               <a

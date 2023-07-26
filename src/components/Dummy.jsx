@@ -67,8 +67,8 @@ const Dummy = () => {
                     <h5 className="card-title">Music Player Web App</h5>
                     <span className="badge bg-primary">Practical DSA</span>
                     <p className="card-text">
-                      A simple music photo application Built using Doubly linked
-                      list
+                      A simple music player application Built using Doubly
+                      linked list
                     </p>
                     <div className="github-btn-container">
                       <a
