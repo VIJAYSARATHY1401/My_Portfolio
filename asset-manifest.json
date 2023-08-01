@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/My_Portfolio/static/css/main.56d590d4.css",
+    "main.css": "/My_Portfolio/static/css/main.3b93b7f6.css",
     "main.js": "/My_Portfolio/static/js/main.2fbc9531.js",
     "static/media/bridge_golden_gate_5639x3561.jpg": "/My_Portfolio/static/media/bridge_golden_gate_5639x3561.c69c354ecfffe8a6e501.jpg",
     "static/media/fa-solid-900.ttf": "/My_Portfolio/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
@@ -14,11 +14,11 @@
     "static/media/fa-v4compatibility.ttf": "/My_Portfolio/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
     "static/media/fa-v4compatibility.woff2": "/My_Portfolio/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/My_Portfolio/index.html",
-    "main.56d590d4.css.map": "/My_Portfolio/static/css/main.56d590d4.css.map",
+    "main.3b93b7f6.css.map": "/My_Portfolio/static/css/main.3b93b7f6.css.map",
     "main.2fbc9531.js.map": "/My_Portfolio/static/js/main.2fbc9531.js.map"
   },
   "entrypoints": [
-    "static/css/main.56d590d4.css",
+    "static/css/main.3b93b7f6.css",
     "static/js/main.2fbc9531.js"
   ]
 }
