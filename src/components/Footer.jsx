@@ -15,17 +15,28 @@ const Footer = () => {
           <blockquote>
             Learn free Gain more! <span style={{ color: "red" }}>❤</span>
           </blockquote>
+          <div className="closing-note">
+            <p>
+              <i className="fas fa-heart"></i>
+              <i className="fas fa-code"></i>
+              <i className="fas fa-lightbulb"></i>
+              <i className="fas fa-users"></i>
+              Passion for design and expertise in crafting innovative digital
+              experiences. Let's connect and turn ideas into reality together!
+              Thank you for visiting my portfolio!
+            </p>
+          </div>
           <div>
             <h3
               style={{
-                marginTop: "8px",
+                marginTop: "2px",
                 marginRight: "8px",
                 textDecoration: "underline",
               }}
             >
               Follow me on
             </h3>
-            <div className="idiv" style={{ marginBottom: "20px" }}>
+            <div className="idiv" style={{ marginBottom: "5px" }}>
               <a
                 href="https://www.facebook.com/david.vijay.5817"
                 target="_blank"
@@ -34,7 +45,7 @@ const Footer = () => {
                 <i className="fab fa-facebook"></i>
               </a>
               <a
-                href="   https://www.linkedin.com/in/vijaysarathy-m-52a37b244/"
+                href="https://www.linkedin.com/in/vijaysarathy-m-52a37b244/"
                 style={{ color: "rgb(24, 121, 248)" }}
                 target="_blank"
               >
@@ -58,13 +69,15 @@ const Footer = () => {
             <span style={{ color: "gray", marginLeft: "-10px" }}>
               &copy; All rights reserved 2023{" "}
             </span>
-            <div className="mt-2">
+            <div className="mt-1">
               <span style={{ color: "gray" }}>
                 <i className="fas fa-info-circle"></i> This Web portfolio was
                 completely designed using React JS and Bootstrap CSS
               </span>
             </div>
           </div>
+
+          {/* Impressive Closing Note */}
         </div>
 
         <div className="img-div">

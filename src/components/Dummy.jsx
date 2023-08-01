@@ -30,6 +30,8 @@ const Dummy = () => {
                       Tic Tac Toe Gaming Application
                     </h5>
                     <span className="badge bg-primary">
+                      <i className="fa fa-tags"></i>
+                      {"  "}
                       Front-end Development
                     </span>
                     <p className="card-text">
@@ -41,7 +43,7 @@ const Dummy = () => {
                       target="_blank"
                     >
                       <span className="btn btn-info b">
-                        View GithHub code <i className="fab fa-github"></i>
+                        View GitHub code <i className="fab fa-github"></i>
                       </span>
                     </a>
                     <a
@@ -65,7 +67,10 @@ const Dummy = () => {
                   />
                   <div className="card-body">
                     <h5 className="card-title">Music Player Web App</h5>
-                    <span className="badge bg-primary">Practical DSA</span>
+                    <span className="badge bg-primary">
+                      <i className="fa fa-tags"></i>
+                      {"  "}Practical DSA
+                    </span>
                     <p className="card-text">
                       A simple music player application Built using Doubly
                       linked list
@@ -101,7 +106,10 @@ const Dummy = () => {
                   />
                   <div className="card-body">
                     <h5 className="card-title">Course management</h5>
-                    <span className="badge bg-primary">Backend Server</span>
+                    <span className="badge bg-primary">
+                      <i className="fa fa-tags"></i>
+                      {"  "}Backend Server
+                    </span>
                     <p className="card-text">
                       An API Implementation and Server Integration Application
                       built using Spring bootframework and Mysql Server.This

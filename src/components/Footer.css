@@ -9,10 +9,10 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0rem 7rem;
+  padding: 1rem 1rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-top: 5px dotted yellow;
-  padding: 2rem 5rem;
+  /* padding: 2rem 5rem; */
   background-color: whitesmoke;
 }
 
@@ -156,5 +156,57 @@ footer .idiv .fa-instagram {
   }
   .img-card {
     margin-top: 20px;
+  }
+}
+/* Footer.css */
+/* Footer.css */
+.closing-note i.fa-heartbeat {
+  color: #f41b1b;
+  margin-right: 8px;
+}
+.closing-note i.fa-code {
+  color: #67d7fe;
+  margin-right: 8px;
+}
+.closing-note i.fa-lightbulb {
+  color: #f1c40f;
+  margin-right: 8px;
+}
+.closing-note i.fa-users {
+  color: #29bb89;
+  margin-right: 8px;
+}
+
+.closing-note {
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.55);
+  animation: fadeIn 1s ease-in-out;
+  /* Decrease the width */
+  max-width: 600px;
+}
+
+.closing-note p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.closing-note i {
+  color: #faca51;
+  margin-right: 8px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

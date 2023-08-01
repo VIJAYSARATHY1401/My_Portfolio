@@ -35,7 +35,7 @@ const Courses = () => {
       title: "Skillrack 5+ crash course",
       provider: "Offered by Skillrack",
       details:
-        "A web learning portal for learning and developing coding/techical skills",
+        "A web learning portal for learning and developing coding/technical skills",
       icon: "fa-school",
       Certificate:
         "https://www.skillrack.com/faces/resume.xhtml?id=305432&key=247890e3b55ca990cde4ba195cb943af65cf5d37",

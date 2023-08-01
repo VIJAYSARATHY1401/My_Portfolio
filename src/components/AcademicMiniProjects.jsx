@@ -77,7 +77,7 @@ const AcademicMiniProjects = () => {
               className="btn btn-primary"
             >
               <i className="fab fa-github"></i>
-              {"    "}GithHub
+              {"    "}GitHub
             </a>
           </div>
         ))}
