@@ -13,6 +13,7 @@ import FutureWork from "./components/FutureWork";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import InternshipExperience from "./components/InternshipExperience";
+import FloatingIcons from "./components/FloatingIcons";
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,7 @@ function App() {
       <FutureWork />
       <ContactForm />
       <Footer />
+      <FloatingIcons />
     </div>
   );
 }

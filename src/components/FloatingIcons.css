@@ -1,0 +1,91 @@
+/* Add any necessary styles for the icons and animations */
+.floating-icons {
+  position: fixed;
+  bottom: 45px;
+  right: 20px;
+  display: none; /* Initially hide the icons */
+  z-index: 100; /* Set a higher z-index value */
+}
+
+/* Show the icons only on mobile devices */
+@media (max-width: 768px) {
+  .floating-icons {
+    display: block;
+  }
+}
+
+.plus-button {
+  background: linear-gradient(
+    45deg,
+    #007bff,
+    #00ff00
+  ); /* Use linear gradient for a smooth color transition */
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.plus-button.active {
+  background: linear-gradient(
+    45deg,
+    #dc3545,
+    #ff00ff
+  ); /* Use linear gradient for a smooth color transition */
+}
+
+.icon-stack {
+  position: absolute;
+  bottom: 65px; /* Adjust the distance as needed */
+  /* right: 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0s 0.3s;
+  background: linear-gradient(
+    45deg,
+    #333,
+    #666
+  ); /* Use linear gradient for the background */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100; /* Set a higher z-index value */
+}
+
+.icon-stack.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Styles for the icons */
+.icon-stack i {
+  font-size: 20px;
+  color: #fff;
+  padding: 8px;
+  border-radius: 50%;
+  background: linear-gradient(
+    45deg,
+    #007bff,
+    #00ff00
+  ); /* Use linear gradient for a smooth color transition */
+  transition: background-color 0.3s;
+}
+
+.icon-stack i:hover {
+  background: linear-gradient(
+    45deg,
+    #dc3545,
+    #ff00ff
+  ); /* Use linear gradient for a smooth color transition */
+}
