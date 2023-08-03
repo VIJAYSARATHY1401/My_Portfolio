@@ -22,10 +22,8 @@ const FloatingIcons = () => {
         className={`plus-button ${showIcons ? "active" : ""}`}
         onClick={toggleIcons}
       >
-        {/* Replace the "+" symbol with the Font Awesome icon */}
-        <i className={`fas ${showIcons ? "fa-times" : "fa-plus"}`}></i>
+        <i className={`fas ${showIcons ? "fa-times" : "fa-plus"} `}></i>
       </div>
-
       <div className={`icon-stack ${showIcons ? "visible" : ""}`}>
         {/* Add your icons here, for example: */}
         <i className="fas fa-phone" onClick={handleCall}></i>

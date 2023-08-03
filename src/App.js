@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from "react";
+import ScrollingTopBar from "./components/ScrollingTopBar";
 import "./App.css";
 import "./bs/css/bootstrap.min.css";
 import TopContainer from "./components/TopContainer";
@@ -14,9 +16,13 @@ import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import InternshipExperience from "./components/InternshipExperience";
 import FloatingIcons from "./components/FloatingIcons";
+
 function App() {
   return (
     <div className="App">
+      {/* Top bar */}
+      <ScrollingTopBar />
+      {/* Other components */}
       <Navbar />
       <div className="bg-img">
         <TopContainer />

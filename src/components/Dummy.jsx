@@ -11,7 +11,7 @@ const Dummy = () => {
         </h2>
         <h4 className=" p-2 lead  text-light">
           Each project is a unique piece of Development{" "}
-          <i className="fa fa-pencil text-primary"></i>
+          <i className="fa fa-puzzle-piece text-info"></i>
         </h4>
 
         <div className="">
@@ -51,7 +51,7 @@ const Dummy = () => {
                       target="_blank"
                       className="btn btn-primary d-block site2 abtn"
                     >
-                      <i className="fa fa-external-link"></i> View site
+                      <i className="fa fa-external-link"></i> View Site
                     </a>
                   </div>
                 </div>
